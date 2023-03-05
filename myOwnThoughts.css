@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0,0,0,0.75)), url(Images/apartments.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navBar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 240px;
+    height: 200px;
+    cursor: pointer;
+    filter: opacity(1) drop-shadow(0 0 0 blue);
+}
+.navBar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navBar ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.navBar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navBar ul li:hover::after{
+    width: 100%;
+
+}
+.hero{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #ffffff;
+}
+.hero h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.hero p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 20px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #ffc000;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.buttonHelpTwo{
+    background: #7393B3;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: .5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+}
+.about img{
+    height: auto;
+    width: 430px;
+    box-shadow: 0px 0px 19px 5px #ffffff;
+}
+.aboutText{
+    width: 550px;
+}
+.main{
+    width: 1150px;
+    max-width: 98%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.aboutText h2{
+    color: azure;
+    font-size: 55px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.aboutText h5{
+    color: azure;
+    font-size: 25px;
+}
+.aboutText p{
+    color: #ffffff;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+    margin-top: 10px;
+}
+.buttonHelpTwo{
+    background: #7393B3;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: .5s;
+}
+.offers{
+    background: #101010;
+    width: 100%;
+    padding: 100px 0px;
+}
+.title h2{
+    color: azure;
+    font-size: 55px;
+    text-transform: capitalize;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    
+}
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #ffc000;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.4s;
+}
+.card:hover{
+    box-shadow: 0px 0px 19px 5px #ffffff;
+}
+.card i{
+    font-size: 45px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #7393B3;
+}
+.card h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.authentication p{
+    color:#101010;
+    line-height: 27px;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+.card .button{
+    background-color: #7393B3;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid #000000;
+    cursor: pointer;
+}
+.contact{
+    width: 100%;
+    height: 290px;
+    background: #191919;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact p{
+    color: azure;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.contact .buttonContact{
+    background-color: #ffc000;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .5s;
+    text-transform: uppercase;
+}
+.contact .buttonContact:hover{
+    background-color: transparent;
+    border: 2px solid #ffc000;
+    cursor: pointer;
+}
+.footer{
+    width: 100%;
+    background: #000000;
+    display: flex;
+    padding: 100px 15%;
+    color: #ffffff;
+}
+.footer div{
+    text-align: center;
+}
+.columnTwo{
+    flex-grow: 2;
+}
+.footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.columnOne a{
+    display: block;
+    text-decoration: none;
+    color: azure;
+    margin-bottom: 10px;
+    transition: all 0.4s linear;
+}
+a:hover{
+    color: #ffc000;
+}
+form input{
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+.socials{
+    display: flex;
+}
+.socials i{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #7393B3;
+    border-radius: 50%;
+    margin: 30px 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.socials i:hover{
+    transform: scale(1.3);
+    transition: .3s;
+}
+.end{
+    position: absolute;
+    color: #7393B3;
+    bottom: 35px;
+    font-size: 15px;
+}
